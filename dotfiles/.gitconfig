@@ -1,1 +1,5 @@
-/Users/user/.gitconfig
+[user]
+	name = Rafael Huaman
+	email = leafar.huaman@gmail.com
+[core]
+	editor = vim
