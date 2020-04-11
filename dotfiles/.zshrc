@@ -16,3 +16,6 @@ export PATH="$HOME/.bin:$PATH"
 # recommended by brew doctor
 export PATH="/usr/local/bin:$PATH"
 source /Users/rafael/.asdf/asdf.sh
+
+# aliases
+source ~/.aliases

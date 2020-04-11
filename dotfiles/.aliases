@@ -1,0 +1,7 @@
+# Phoenix
+
+alias phxs="mix phx.server"
+alias phsx="iex -S mix" 
+alias phxdm="mix ecto.migrate"
+alias phxdr="mix ecto.rollback"
+alias phxr="mix phx.routes"
