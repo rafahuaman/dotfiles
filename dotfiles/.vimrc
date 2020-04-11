@@ -15,6 +15,7 @@ Plug 'drewtempelmeyer/palenight.vim'
 Plug 'tpope/vim-commentary'
 Plug 'vim-ruby/vim-ruby'
 Plug 'pangloss/vim-javascript'
+Plug 'maxmellon/vim-jsx-pretty'
 
 " All of your Plugins must be added before the following line
 call plug#end()
