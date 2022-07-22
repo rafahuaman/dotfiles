@@ -1,7 +1,17 @@
 # Phoenix
 
 alias phxs="mix phx.server"
-alias phsx="iex -S mix" 
+alias phxc="iex -S mix"
 alias phxdm="mix ecto.migrate"
 alias phxdr="mix ecto.rollback"
 alias phxr="mix phx.routes"
+
+alias y="yarn"
+alias yi="yarn install"
+alias ys="yarn start"
+alias ya="yarn add"
+alias yr="yarn remove"
+alias yad="yarn add -D"
+alias yt="yarn test"
+alias yo="yarn outdated"
+alias yd="yarn dev"
