@@ -15,7 +15,12 @@ export PATH="$HOME/.bin:$PATH"
 
 # recommended by brew doctor
 export PATH="/usr/local/bin:$PATH"
-source /Users/rafael/.asdf/asdf.sh
+source /opt/homebrew/opt/asdf/libexec/asdf.sh
 
 # aliases
 source ~/.aliases
+
+
+# set vim as default editor
+export VISUAL=vim
+export EDITOR="$VISUAL"
