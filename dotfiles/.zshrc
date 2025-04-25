@@ -15,7 +15,7 @@ export PATH="$HOME/.bin:$PATH"
 
 # recommended by brew doctor
 export PATH="/usr/local/bin:$PATH"
-source /opt/homebrew/opt/asdf/libexec/asdf.sh
+#source /opt/homebrew/opt/asdf/libexec/asdf.sh
 
 # aliases
 source ~/.aliases

@@ -8,6 +8,7 @@ alias phxr="mix phx.routes"
 
 alias y="yarn"
 alias yi="yarn install"
+alias yif="yarn install --frozen-lockfile"
 alias ys="yarn start"
 alias ya="yarn add"
 alias yr="yarn remove"
@@ -16,3 +17,29 @@ alias yt="yarn test"
 alias yo="yarn outdated"
 alias yd="yarn dev"
 alias yc="yarn commit"
+alias yb="yarn build"
+
+
+# pnpm
+alias p="pnpm"
+alias pa='pnpm add'
+alias pad='pnpm add --save-dev'
+alias pin='pnpm install'
+alias pif='pnpm install --frozen-lockfile'
+alias po='pnpm outdated'
+alias pu='pnpm update'
+alias puil='pnpm update --interactive'
+alias puil='pnpm update --interactive --latest'
+alias pr='pnpm run'
+alias prun='pnpm run'
+alias pex='pnpm exec'
+alias pdx='pnpm dlx'
+alias pd='pnpm dev'
+alias pb='pnpm build'
+alias ps='pnpm start'
+alias psv='pnpm serve'
+alias pt='pnpm test'
+alias pl='pnpm lint'
+
+# tilt
+alias t="/opt/homebrew/bin/tilt"
