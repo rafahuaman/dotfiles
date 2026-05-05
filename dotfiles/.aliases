@@ -24,6 +24,7 @@ alias yb="yarn build"
 alias p="pnpm"
 alias pa='pnpm add'
 alias pad='pnpm add --save-dev'
+alias pi='pnpm install'
 alias pin='pnpm install'
 alias pif='pnpm install --frozen-lockfile'
 alias po='pnpm outdated'
@@ -43,3 +44,7 @@ alias pl='pnpm lint'
 
 # tilt
 alias t="/opt/homebrew/bin/tilt"
+
+
+# rails
+alias rortp='bundle exec rails db:test:prepare'
