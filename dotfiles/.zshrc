@@ -124,3 +124,6 @@ source ~/.aliases
 # set vim as default editor
 export VISUAL=vim
 export EDITOR="$VISUAL"
+
+# zoxide
+eval "$(zoxide init zsh)"
