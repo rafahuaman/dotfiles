@@ -34,15 +34,13 @@ zmodule magic-enter
 zmodule duration-info
 # Exposes git repository status information to prompts.
 zmodule git-info
-# A heavily reduced, ASCII-only version of the Spaceship and Starship prompts.
-zmodule asciiship
+# Theme
+zmodule sorin
 # Formats the current working directory to be used by prompts.
 zmodule prompt-pwd
 
 
-# Theme
 
-zmodule sorin
 
 #
 # Completion

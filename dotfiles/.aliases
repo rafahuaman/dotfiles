@@ -45,6 +45,18 @@ alias pl='pnpm lint'
 # tilt
 alias t="/opt/homebrew/bin/tilt"
 
+# Ruby
+alias rb='ruby'
+
+# Bundler
+alias rbb='bundle'
+alias rbbc='bundle clean'
+alias rbbe='bundle exec'
+alias rbbi='bundle install --path vendor/bundle'
+alias rbbl='bundle list'
+alias rbbo='bundle open'
+alias rbbp='bundle package'
+alias rbbu='bundle update'
 
 # rails
 alias ror='bundle exec rails'
