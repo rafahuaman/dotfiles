@@ -10,15 +10,14 @@ endif
 " Call Plug 
 call plug#begin('~/.vim/plugged')
 
-" let Vundle manage Vundle, required
-Plug 'VundleVim/Vundle.vim'
-
 " My bundles
 Plug 'tpope/vim-sensible'
 Plug 'tpope/vim-repeat'
 Plug 'tpope/vim-surround'
-Plug 'ctrlpvim/ctrlp.vim'
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plug 'junegunn/fzf.vim'
 Plug 'drewtempelmeyer/palenight.vim'
+Plug 'catppuccin/vim', { 'as': 'catppuccin' }
 Plug 'tpope/vim-commentary'
 Plug 'vim-ruby/vim-ruby'
 Plug 'pangloss/vim-javascript'
@@ -32,9 +31,6 @@ syntax on
 
 
 " General
-set background=dark
-colorscheme palenight
-
 let mapleader = " "
 
 set tabstop=2
@@ -52,6 +48,7 @@ set colorcolumn=+1
 
 " Numbers
 set number
+set relativenumber
 set numberwidth=5
 
 set complete+=kspell
@@ -60,11 +57,23 @@ set complete+=kspell
 if (has("termguicolors"))
   set termguicolors
 endif
-let g:palenight_terminal_italics=1
 
-" Make CtrlP use ag for listing the files. Way faster and no useless files.
-let g:ctrlp_user_command = 'ag %s --files-with-matches --nocolor --hidden --filename-pattern ""'
-let g:ctrlp_use_caching = 1
+" Switch colorscheme based on macOS system appearance
+let s:appearance = system("defaults read -g AppleInterfaceStyle 2>/dev/null")
+if s:appearance =~ "Dark"
+  set background=dark
+  let g:palenight_terminal_italics=1
+  colorscheme palenight
+else
+  set background=light
+  colorscheme catppuccin_latte
+endif
+
+" fzf (mirrors LazyVim defaults for easier future migration)
+nnoremap <leader><leader> :Files<cr>    " find files
+nnoremap <leader>/ :Ag<cr>              " live grep (ag)
+nnoremap <leader>fb :Buffers<cr>        " find open buffers
+nnoremap <leader>fg :GFiles<cr>         " find git-tracked files
 
 " Source vimrc and install bundles
 nmap <Leader>vi :source $MYVIMRC<cr>:PlugInstall<cr>
