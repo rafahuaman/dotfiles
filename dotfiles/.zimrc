@@ -20,9 +20,6 @@ zmodule utility
 # <-- Normally new modules should be added here. Check each module documentation
 # for any caveats.
 
-# Provides ruby, bundler, rbenv and rvm aliases and initialization.
-zmodule ruby
-
 # Shown when there is no command and user presses ENTER.
 zmodule magic-enter
 
